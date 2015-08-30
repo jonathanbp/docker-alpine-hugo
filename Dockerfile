@@ -1,4 +1,4 @@
-FROM yunspace/alpine-golang:0.1
+FROM yunspace/alpine-golang:latest
 MAINTAINER Yun Zhi Lin <yun@yunspace.com>
 
 ENV HUGO_VERSION 0.14
