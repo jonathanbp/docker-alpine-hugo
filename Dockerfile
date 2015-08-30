@@ -1,11 +1,11 @@
-FROM yunspace/alpine-golang:latest
+FROM alpine:3.2
 MAINTAINER Yun Zhi Lin <yun@yunspace.com>
 
 ENV HUGO_VERSION 0.14
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux_amd64
 
 # Install pygments (for syntax highlighting)
-RUN apk update && apk add py-pygments && rm -rf /var/cache/apk/*
+RUN apk update && apk add git py-pygments && rm -rf /var/cache/apk/*
 
 # Download and Install hugo
 ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz /usr/local/
