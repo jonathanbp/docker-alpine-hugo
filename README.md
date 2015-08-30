@@ -1,12 +1,8 @@
 # Docker alpine Harp
 
-[![Docker Repository on Quay.io](https://quay.io/repository/yunspace/alpine-harp/status "Docker Repository on Quay.io")](https://quay.io/repository/yunspace/alpine-harp)
+[![Docker Repository on Quay.io](https://quay.io/repository/technotycoon/alpine-hugo/status "Docker Repository on Quay.io")](https://quay.io/repository/technotycoon/alpine-hugo)
 
-Minimal [Hugo](https://gohugo.io) Microcontainer leveraging [Alpine Linux](https://github.com/gliderlabs/docker-alpine)
-
-## Base Docker Image
-
-* [yunspace/docker-alpine-golang](https://registry.hub.docker.com/u/yunspace/docker-alpine-golang/)
+Minimal [Hugo](https://gohugo.io) Microcontainer, 82mb with git. Leverages offical [Alpine](https://hub.docker.com/_/alpine/) base image.
 
 ## Usage
 
