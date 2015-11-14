@@ -1,0 +1,4 @@
+hello:
+  image: 'quay.io/technotycoon/alpine-hugo:latest'
+  ports:
+    - '1313'

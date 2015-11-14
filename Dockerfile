@@ -13,7 +13,5 @@ RUN tar xzf /usr/local/${HUGO_BINARY}.tar.gz -C /usr/local/ \
 	&& ln -s /usr/local/${HUGO_BINARY}/${HUGO_BINARY} /usr/local/bin/hugo \
 	&& rm /usr/local/${HUGO_BINARY}.tar.gz
 
-# Expose default hugo port
 EXPOSE 1313
-
 CMD hugo version
