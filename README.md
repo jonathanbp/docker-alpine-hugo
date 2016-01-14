@@ -1,4 +1,4 @@
-# Docker alpine Harp
+# Docker Alpine Hugo
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/?repo=https://github.com/TechnoTycoon/docker-alpine-hugo)
 [![Docker Repository on Quay.io](https://quay.io/repository/yunspace/alpine-hugo/status "Docker Repository on Quay.io")](https://quay.io/repository/technotycoon/alpine-hugo)
