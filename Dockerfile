@@ -1,7 +1,7 @@
 FROM alpine:3.2
-MAINTAINER Yun Zhi Lin <yun@yunspace.com>
+MAINTAINER Jonathan Bunde-Pedersen <jonathan@purebadger.com>
 
-ENV HUGO_VERSION 0.14
+ENV HUGO_VERSION 0.15
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux_amd64
 
 # Install pygments (for syntax highlighting)
