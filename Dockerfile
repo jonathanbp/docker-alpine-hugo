@@ -8,10 +8,11 @@ ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
 RUN apk update && apk add py-pygments && apk add bash && rm -rf /var/cache/apk/*
 
 # Download and Install hugo
-ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tgz /usr/local/
-RUN tar xzf /usr/local/${HUGO_BINARY}.tgz -C /usr/local/ \
-	&& ln -s /usr/local/${HUGO_BINARY}/${HUGO_BINARY} /usr/local/bin/hugo \
-	&& rm /usr/local/${HUGO_BINARY}.tgz
+RUN mkdir /usr/local/hugo
+ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tgz /usr/local/hugo/
+RUN tar xzf /usr/local/hugo/${HUGO_BINARY}.tgz -C /usr/local/hugo/ \
+	&& ln -s /usr/local/hugo/hugo /usr/local/bin/hugo \
+	&& rm /usr/local/hugo/${HUGO_BINARY}.tgz
 
 EXPOSE 1313
 CMD hugo version
