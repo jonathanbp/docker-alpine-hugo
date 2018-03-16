@@ -1,7 +1,7 @@
-FROM alpine:3.4
+FROM alpine:3.7
 MAINTAINER Jonathan Bunde-Pedersen <jonathan@purebadger.com>
 
-ENV HUGO_VERSION 0.26
+ENV HUGO_VERSION 0.37.1
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
 
 # Install pygments (for syntax highlighting) and bash
